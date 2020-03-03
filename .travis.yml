@@ -8,7 +8,7 @@ before_install:
 script: 
     - docker run -e CI=true sechung/docker-react npm run test -- --coverage
 
- deploy:
+deploy:
     # edge: true
     provider: elasticbeanstalk
     region: "us-east-2"
